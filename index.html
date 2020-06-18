@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+
+    <title>Cálculo Fluxo O2</title>
+  </head>
+  <body onload="onLoad()">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">Cálculo Fluxo O2</a>
+        
+    </nav>
+
+    <div class="content">
+        <div class="alert alert-warning" role="alert">
+            <p><strong>Atenção:</strong> o código do aplicativo pode ser livremente utilizado e copiado. Todo aplicativo pode conter erros de implementação (bugs), use-o por sua própria conta e risco.</p>
+        </div>
+        
+        <form>
+            <div class="form-group">
+              <label for="fio2">FiO2 (entre 0,21 e 1)</label>
+              <input type="number" class="form-control" id="fio2" aria-describedby="fio2Help" value="0,21" step=".01">
+              <small id="fio2Help" class="form-text text-muted">Fração inspirada de oxigênio<br>Ex: 0,40 = 40%</small>
+            </div>
+            <div class="form-group">
+              <label for="totalFlow">Fluxo total (Litro/minuto)</label>
+              <input type="number" class="form-control" id="totalFlow" aria-describedby="totalFlowHelp" value="0" placeholder="0">
+              <small id="totalFlowHelp" class="form-text text-muted">Total desejado (Fluxo de ar + Fluxo de O2)</small>
+            </div>
+            <hr>
+            <div class="form-group">
+              <label for="o2Flow">Fluxo de O2 (Litro/minuto)</label>
+              <input class="form-control" id="o2Flow" placeholder="0" readonly>  
+            </div>
+            <div class="form-group">
+              <label for="airFlow">Fluxo de Ar (Litro/minuto)</label>
+              <input class="form-control" id="airFlow" placeholder="0" readonly>
+            </div>
+            
+        </form>
+    </div>
+
+    
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+</html>

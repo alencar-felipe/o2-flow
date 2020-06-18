@@ -1,0 +1,10 @@
+.content {
+    width: 100%;
+    max-width: 600px;
+    padding: 15px;
+    margin: 0 auto;
+}
+
+input[readonly]{
+    background-color:transparent !important;
+}

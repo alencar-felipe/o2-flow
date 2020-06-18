@@ -11,9 +11,9 @@ function onLoad() {
     fio2.addEventListener('keyup', calc);
     fio2.addEventListener('input', calc);
     
-    fio2.addEventListener('change', calc);
+    totalFlow.addEventListener('change', calc);
     totalFlow.addEventListener('keyup', calc);
-    fio2.addEventListener('input', calc);
+    totalFlow.addEventListener('input', calc);
     
     calc();
 }

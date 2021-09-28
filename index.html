@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="pt-br">
+<html lang="en">
   <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
@@ -9,37 +9,37 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
 
-    <title>Cálculo Fluxo O2</title>
+    <title>O2 Flow Calculator</title>
   </head>
   <body onload="onLoad()">
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <a class="navbar-brand" href="#">Cálculo Fluxo O2</a>
+        <a class="navbar-brand" href="#">O2 Flow Calculator</a>
         
     </nav>
 
     <div class="content">
         <div class="alert alert-warning" role="alert">
-            <p><strong>Atenção:</strong> o código do aplicativo pode ser livremente utilizado e copiado. Todo aplicativo pode conter erros de implementação (bugs), use-o por sua própria conta e risco.</p>
+            <p><strong>Warning:</strong> the application code can be freely used and copied. Every application may contain implementation errors (bugs), use it at your own risk.</p>
         </div>
         
         <form>
             <div class="form-group">
-              <label for="fio2">FiO2 (entre 0,21 e 1)</label>
+              <label for="fio2">FiO2 (between 0.21 and 1)</label>
               <input type="number" class="form-control" id="fio2" aria-describedby="fio2Help" value="0,21" step=".01">
-              <small id="fio2Help" class="form-text text-muted">Fração inspirada de oxigênio<br>Ex: 0,40 = 40%</small>
+              <small id="fio2Help" class="form-text text-muted">Inspired Oxygen Fraction<br>(e.g., 0.40 = 40%)</small>
             </div>
             <div class="form-group">
-              <label for="totalFlow">Fluxo total (Litro/minuto)</label>
+              <label for="totalFlow">Total flow (Liters/minute)</label>
               <input type="number" class="form-control" id="totalFlow" aria-describedby="totalFlowHelp" value="0" placeholder="0">
-              <small id="totalFlowHelp" class="form-text text-muted">Total desejado (Fluxo de ar + Fluxo de O2)</small>
+              <small id="totalFlowHelp" class="form-text text-muted">Desired total (Air Flow + O2 Flow)</small>
             </div>
             <hr>
             <div class="form-group">
-              <label for="o2Flow">Fluxo de O2 (Litro/minuto)</label>
+              <label for="o2Flow">O2 Flow (Liters/minute)</label>
               <input class="form-control" id="o2Flow" placeholder="0" readonly>  
             </div>
             <div class="form-group">
-              <label for="airFlow">Fluxo de Ar (Litro/minuto)</label>
+              <label for="airFlow">Air Flow (Liters/minute)</label>
               <input class="form-control" id="airFlow" placeholder="0" readonly>
             </div>
             
